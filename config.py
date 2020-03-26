@@ -13,7 +13,11 @@ parser.add_argument('--images_path', type=str, default='.\\images')
 # 설정된 변수들 객체에 저장
 args = parser.parse_args()
 
-
+def do_sampling():
+    if args.caption_file_path:
+        return true
+    else:
+        return false
 
 
 # 참고 사이트 : https://docs.python.org/ko/3/howto/argparse.html

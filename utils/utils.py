@@ -2,6 +2,7 @@ from datetime import datetime
 import pickle
 import os
 import matplotlib.pyplot as plt
+import matplotlib.image as img
 import numpy as np
 import tensorflow as tf
 import config
@@ -18,10 +19,18 @@ def save_config():
 		pickle.dump(config_file, file)
 
 
-	pass
-
-
-
 # Req. 4-1	이미지와 캡션 시각화
-def visualize_img_caption():
-	pass
+def visualize_img_caption(dataset_sampled, target_idx):
+	img_path = '.\\images\\'+dataset_sampled[target_idx][0]
+	comments = dataset_sampled[target_idx][1]
+
+	title = ""
+	for comment in comments:
+		title += "\n" + comment
+
+	image = img.imread(img_path)
+
+	plt.imshow(image)
+	plt.title(title)
+	plt.show()
+
