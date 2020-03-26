@@ -29,6 +29,7 @@ def get_path_caption():
                 temp.append(row[2])
                 # captions[idx].append(row[2])
             else:
+                prev_path = row[0]
                 captions.append(temp)
                 temp = []
                 # idx += 1
@@ -36,10 +37,8 @@ def get_path_caption():
                 temp.append(row[2])
                 # captions[idx].append(row[2])
 
-
-    for i in range(0, 100):
-        print("i : ",i,"img_path :", img_paths[i],"captions : ", captions[i])
-    pass
+    return img_paths, captions
+    
 
 
 # Req. 3-2	전체 데이터셋을 분리해 저장하기
