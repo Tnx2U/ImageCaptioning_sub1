@@ -1,4 +1,4 @@
-# 인공지능 프로젝트
+﻿# 인공지능 프로젝트
 
 ### 환경설정
 
@@ -26,7 +26,7 @@ y_data = train_data[:,1]
 model = LinearModel(num_units=1)
 # model = Model(inputs=a, outputs=b) 로 생성시 a입력하면 b가 나오는 함수를 만들어준다.
 ```
-* LinearModel 클래스의 인스턴스를 만든다. (../models/linear_model.py)
+* LinearModel 클래스의 인스턴스를 만든다. (../models/linear_model.py).
 #
 
 
