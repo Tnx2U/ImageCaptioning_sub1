@@ -1,4 +1,4 @@
-from config import config
+import config
 from data import preprocess 
 from utils import utils
 
